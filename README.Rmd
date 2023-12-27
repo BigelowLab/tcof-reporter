@@ -11,6 +11,9 @@ suppressPackageStartupMessages({
   library(obpg2tools)
   library(murtools)
   library(namforecast)
+  library(oisster)
+  library(ersst)
+  
   library(knitr)
   library(dplyr)
 })
@@ -24,7 +27,8 @@ Tallies of various data products maintained at [Tandy Center](https://www.bigelo
  + `count` number of records available
  + `age` the time between the current report date, ```r Sys.Date()```, and the most recent record.  Negative is a forecast date ahead of run date.
  
-## OBPG
+## OBPG for Northwest Atlantic 
+
 ```{r, echo = FALSE}
 path = obpg2tools::obpg_path("nwa", "AQUA_MODIS", "L3m")
 db = obpg2tools::read_database(path) |>
@@ -45,7 +49,8 @@ knitr::kable(db)
 ```
 
 
-## MUR
+## MUR for Northwest Atlantic
+
 ```{r, echo = FALSE}
 path = murtools::mur_path("nwa")
 db = murtools::read_database(path) |>
@@ -65,7 +70,7 @@ db = murtools::read_database(path) |>
 knitr::kable(db)
 ```
 
-## NAM
+## NAM for Northeast US and Eastern Canada
 
 Negative age means days ahead of the current date.
 
@@ -87,3 +92,46 @@ db = namforecast::read_database(path) |>
   bind_rows()
 knitr::kable(db)
 ```
+
+## OISST for the world
+
+```{r, echo = FALSE}
+path = oisster::oisst_path("world")
+db = oisster::read_database(path) |> 
+  select(-param) |>
+  group_by(per, trt) |>
+  group_map(
+      function(tbl, key){
+        count = nrow(tbl)
+        lastdate = slice_max(tbl, order_by = date)$date
+        age = Sys.Date() - slice_max(tbl, order_by = date)$date
+        slice(tbl, 1) |>
+          mutate(count = count, age = age) |>
+          mutate(lastdate = lastdate, .after = date) |>
+          rename(firstdate = date)
+      }, .keep = TRUE) |>
+    bind_rows()
+knitr::kable(db)
+```
+
+## ERSST for the world
+
+```{r, echo = FALSE}
+path = ersst::ersst_path("v5")
+db = ersst::read_database(path) |> 
+  select(-version) |>
+  group_by(anomaly) |>
+  group_map(
+      function(tbl, key){
+        count = nrow(tbl)
+        lastdate = slice_max(tbl, order_by = date)$date
+        age = Sys.Date() - slice_max(tbl, order_by = date)$date
+        slice(tbl, 1) |>
+          mutate(count = count, age = age) |>
+          mutate(lastdate = lastdate, .after = date) |>
+          rename(firstdate = date)
+      }, .keep = TRUE) |>
+    bind_rows()
+knitr::kable(db)
+```
+

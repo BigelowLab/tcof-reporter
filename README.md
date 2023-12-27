@@ -14,7 +14,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 - `age` the time between the current report date, `2023-12-27`, and the
   most recent record. Negative is a forecast date ahead of run date.
 
-## OBPG
+## OBPG for Northwest Atlantic
 
 | firstdate  | lastdate   | per  | param        | count | age       |
 |:-----------|:-----------|:-----|:-------------|------:|:----------|
@@ -41,7 +41,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2002-07-01 | 2021-03-01 | MO   | sst          |   225 | 1031 days |
 | 2004-01-08 | 2023-03-13 | 8DR  | sst_slope    |  7004 | 289 days  |
 
-## MUR
+## MUR for Northwest Atlantic
 
 | firstdate  | lastdate   | per | param     | count | age    |
 |:-----------|:-----------|:----|:----------|------:|:-------|
@@ -49,7 +49,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2004-01-01 | 2023-12-26 | DAY | sst_cum   |  7300 | 1 days |
 | 2004-01-01 | 2023-12-26 | DAY | sst_slope |  7300 | 1 days |
 
-## NAM
+## NAM for Northeast US and Eastern Canada
 
 Negative age means days ahead of the current date.
 
@@ -70,3 +70,21 @@ Negative age means days ahead of the current date.
 | 2022-09-30 | 2023-12-30 | vis     | mean  |  3936 | -3 days |
 | 2022-09-30 | 2023-12-30 | vwind   | mean  |  7096 | -3 days |
 | 2022-09-30 | 2023-12-30 | wilt    | mean  |  7091 | -3 days |
+
+## OISST for the world
+
+| firstdate  | lastdate   | per | trt   | count | age      |
+|:-----------|:-----------|:----|:------|------:|:---------|
+| 1982-01-01 | 2023-01-01 | ann | max   |    42 | 360 days |
+| 1982-01-01 | 2023-01-01 | ann | mean  |    42 | 360 days |
+| 1982-01-01 | 2023-01-01 | ann | min   |    42 | 360 days |
+| 1982-01-01 | 2023-01-01 | ann | range |    42 | 360 days |
+| 1982-01-01 | 2023-01-01 | ann | sum   |    42 | 360 days |
+| 1981-09-01 | 2023-12-25 | day | mean  | 15456 | 2 days   |
+
+## ERSST for the world
+
+| firstdate  | lastdate   | anomaly | count | age      |
+|:-----------|:-----------|:--------|------:|:---------|
+| 1854-01-01 | 2023-09-01 | FALSE   |  2037 | 117 days |
+| 1854-01-01 | 2023-09-01 | TRUE    |  2037 | 117 days |
