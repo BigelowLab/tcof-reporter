@@ -1,0 +1,83 @@
+---
+title: "Tandy Center Daily Data Reports"
+output:
+  github_document:
+    html_preview: false
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+suppressPackageStartupMessages({
+  library(obpg2tools)
+  library(murtools)
+  library(namforecast)
+  library(knitr)
+  library(dplyr)
+})
+```
+
+Tallies of various data products maintained at [Tandy Center](https://www.bigelow.org/services/ocean-forecasting/) and the [Computational Oceanography Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
+
+## OBPG
+```{r, echo = FALSE}
+path = obpg2tools::obpg_path("nwa", "AQUA_MODIS", "L3m")
+db = obpg2tools::read_database(path) |>
+  select(date, per, param) |>
+  group_by(param, per) |> 
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      lastdate = slice_max(tbl, order_by = date)$date
+      age = Sys.Date() - slice_max(tbl, order_by = date)$date
+      slice(tbl, 1) |>
+        mutate(count = count, age = age) |>
+        mutate(lastdate = lastdate, .after = date) |>
+        rename(firstdate = date)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+```
+
+
+## MUR
+```{r, echo = FALSE}
+path = murtools::mur_path("nwa")
+db = murtools::read_database(path) |>
+  select(date, per, param) |>
+  group_by(param, per) |>
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      lastdate = slice_max(tbl, order_by = date)$date
+      age = Sys.Date() - slice_max(tbl, order_by = date)$date
+      slice(tbl, 1) |>
+        mutate(count = count, age = age) |>
+        mutate(lastdate = lastdate, .after = date) |>
+        rename(firstdate = date)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+```
+
+## NAM
+
+Negative age means days ahead of the current date.
+
+```{r, echo = FALSE}
+path = namforecast::nam_path("nwa", "forecast")
+db = namforecast::read_database(path) |>
+  select(date, param, trt) |>
+  group_by(param, trt) |>
+ group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      lastdate = slice_max(tbl, order_by = date)$date
+      age = Sys.Date() - slice_max(tbl, order_by = date)$date
+      slice(tbl, 1) |>
+        mutate(count = count, age = age) |>
+        mutate(lastdate = lastdate, .after = date) |>
+        rename(firstdate = date)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+```
