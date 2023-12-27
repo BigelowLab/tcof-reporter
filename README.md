@@ -6,6 +6,14 @@ Center](https://www.bigelow.org/services/ocean-forecasting/) and the
 [Computational Oceanography
 Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
+- `firstdate` `lastdate` first an last recorded dates (there may be some
+  missing between)
+- `per` the period of time the variable represents
+- `param` short hand parameter name
+- `count` number of records available
+- `age` the time between the current report date, `2023-12-27`, and the
+  most recent record. Negative is a forecast date ahead of run date.
+
 ## OBPG
 
 | firstdate  | lastdate   | per  | param        | count | age       |
