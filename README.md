@@ -45,9 +45,9 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 | firstdate  | lastdate   | per | param     | count | age    |
 |:-----------|:-----------|:----|:----------|------:|:-------|
-| 2004-01-01 | 2023-12-26 | DAY | sst       |  7300 | 2 days |
+| 2004-01-01 | 2023-12-27 | DAY | sst       |  7301 | 1 days |
 | 2004-01-01 | 2023-12-26 | DAY | sst_cum   |  7300 | 2 days |
-| 2004-01-01 | 2023-12-26 | DAY | sst_slope |  7300 | 2 days |
+| 2004-01-01 | 2023-12-27 | DAY | sst_slope |  7301 | 1 days |
 
 ## NAM for Northeast US and Eastern Canada
 
