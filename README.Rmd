@@ -45,7 +45,8 @@ db = obpg2tools::read_database(path) |>
       slice_tail(tbl, n=1) |>
         mutate(count = count, age = age) |>
         mutate(lastdate = lastdate, .after = date) |>
-        rename(firstdate = date)
+        rename(firstdate = date) |>
+        select(-end_date)
     }, .keep = TRUE) |>
   bind_rows()
 knitr::kable(db)
