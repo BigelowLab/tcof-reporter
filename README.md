@@ -14,7 +14,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 - `age` the time between the current report date, `2024-01-09`, and the
   most recent record. Negative is a forecast date ahead of run date.
 
-## OBPG for world (mixed resolutions)
+## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
 | firstdate  | lastdate   | per  | param   | res | count | age      |
 |:-----------|:-----------|:-----|:--------|:----|------:|:---------|
@@ -59,7 +59,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2002-12-21 | 2023-03-20 | SCWI | sst     | 9km |     5 | 295 days |
 | 2022-01-01 | 2022-12-31 | YR   | sst     | 9km |    42 | 374 days |
 
-## OBPG for Northwest Atlantic (all 4km res)
+## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
 | firstdate  | lastdate   | per  | param        | count | age       |
 |:-----------|:-----------|:-----|:-------------|------:|:----------|
@@ -86,7 +86,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2002-07-01 | 2021-03-01 | MO   | sst          |   225 | 1044 days |
 | 2004-01-08 | 2024-01-08 | 8DR  | sst_slope    |  7305 | 1 days    |
 
-## MUR for Northwest Atlantic (all 0.01 degree res)
+## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res)
 
 | firstdate  | lastdate   | per | param     | count | age     |
 |:-----------|:-----------|:----|:----------|------:|:--------|
@@ -94,7 +94,7 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2004-01-01 | 2023-12-30 | DAY | sst_cum   |  7304 | 10 days |
 | 2004-01-01 | 2024-01-08 | DAY | sst_slope |  7313 | 1 days  |
 
-## NAM for Northeast US and Eastern Canada (all 12km res)
+## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res)
 
 Negative age means days ahead of the current date.
 
@@ -116,7 +116,7 @@ Negative age means days ahead of the current date.
 | 2022-09-30 | 2024-01-12 | vwind   | mean  |  7109 | -3 days |
 | 2022-09-30 | 2024-01-12 | wilt    | mean  |  7104 | -3 days |
 
-## OISST for the world
+## [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) for the world (0.25 degree res, daily res)
 
 | firstdate  | lastdate   | per | trt   | count | age      |
 |:-----------|:-----------|:----|:------|------:|:---------|
@@ -127,7 +127,7 @@ Negative age means days ahead of the current date.
 | 1982-01-01 | 2023-01-01 | ann | sum   |    42 | 373 days |
 | 1981-09-01 | 2024-01-07 | day | mean  | 15469 | 2 days   |
 
-## ERSST for the world
+## [ERSST](https://www.ncei.noaa.gov/products/extended-reconstructed-sst) for the world (2 degree res, monthly res)
 
 | firstdate  | lastdate   | anomaly | count | age      |
 |:-----------|:-----------|:--------|------:|:---------|

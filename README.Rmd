@@ -28,7 +28,7 @@ Tallies of various data products maintained at [Tandy Center](https://www.bigelo
  + `age` the time between the current report date, ```r Sys.Date()```, and the most recent record.  Negative is a forecast date ahead of run date.
  
  
-## OBPG for world (mixed resolutions)
+## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
 ```{r, echo = FALSE}
 path = obpg2tools::obpg_path("world", "AQUA_MODIS", "L3m")
@@ -52,7 +52,7 @@ db = obpg2tools::read_database(path) |>
 knitr::kable(db)
 ```
  
-## OBPG for Northwest Atlantic (all 4km res)
+## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
 ```{r, echo = FALSE}
 path = obpg2tools::obpg_path("nwa", "AQUA_MODIS", "L3m")
@@ -74,7 +74,7 @@ knitr::kable(db)
 ```
 
 
-## MUR for Northwest Atlantic (all 0.01 degree res)
+## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res)
 
 ```{r, echo = FALSE}
 path = murtools::mur_path("nwa")
@@ -95,7 +95,7 @@ db = murtools::read_database(path) |>
 knitr::kable(db)
 ```
 
-## NAM for Northeast US and Eastern Canada (all 12km res)
+## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res)
 
 Negative age means days ahead of the current date.
 
@@ -118,7 +118,7 @@ db = namforecast::read_database(path) |>
 knitr::kable(db)
 ```
 
-## OISST for the world 
+## [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) for the world (0.25 degree res, daily res)
 
 ```{r, echo = FALSE}
 path = oisster::oisst_path("world")
@@ -139,7 +139,7 @@ db = oisster::read_database(path) |>
 knitr::kable(db)
 ```
 
-## ERSST for the world
+## [ERSST](https://www.ncei.noaa.gov/products/extended-reconstructed-sst) for the world (2 degree res, monthly res)
 
 ```{r, echo = FALSE}
 path = ersst::ersst_path("v5")
