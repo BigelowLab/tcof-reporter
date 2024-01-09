@@ -27,7 +27,31 @@ Tallies of various data products maintained at [Tandy Center](https://www.bigelo
  + `count` number of records available
  + `age` the time between the current report date, ```r Sys.Date()```, and the most recent record.  Negative is a forecast date ahead of run date.
  
-## OBPG for Northwest Atlantic 
+ 
+## OBPG for world (mixed resolutions)
+
+```{r, echo = FALSE}
+path = obpg2tools::obpg_path("world", "AQUA_MODIS", "L3m")
+db = obpg2tools::read_database(path) |>
+  obpg2tools::database_to_climatology(filter = TRUE) |>
+  select(date, end_date, per, param, res) |>
+  group_by(param, per, res) |> 
+  group_map(
+    function(tbl, key){
+      #cat(str(key), "\n")
+      count = nrow(tbl)
+      lastdate = max(tbl$end_date)
+      age = Sys.Date() - lastdate
+      slice_tail(tbl, n=1) |>
+        mutate(count = count, age = age) |>
+        mutate(lastdate = lastdate, .after = date) |>
+        rename(firstdate = date)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+```
+ 
+## OBPG for Northwest Atlantic (all 4km res)
 
 ```{r, echo = FALSE}
 path = obpg2tools::obpg_path("nwa", "AQUA_MODIS", "L3m")
@@ -49,7 +73,7 @@ knitr::kable(db)
 ```
 
 
-## MUR for Northwest Atlantic
+## MUR for Northwest Atlantic (all 0.01 degree res)
 
 ```{r, echo = FALSE}
 path = murtools::mur_path("nwa")
@@ -70,7 +94,7 @@ db = murtools::read_database(path) |>
 knitr::kable(db)
 ```
 
-## NAM for Northeast US and Eastern Canada
+## NAM for Northeast US and Eastern Canada (all 12km res)
 
 Negative age means days ahead of the current date.
 
@@ -93,7 +117,7 @@ db = namforecast::read_database(path) |>
 knitr::kable(db)
 ```
 
-## OISST for the world
+## OISST for the world 
 
 ```{r, echo = FALSE}
 path = oisster::oisst_path("world")
