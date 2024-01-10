@@ -61,30 +61,30 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
-| firstdate  | lastdate   | per  | param        | count | age       |
-|:-----------|:-----------|:-----|:-------------|------:|:----------|
-| 2004-01-16 | 2024-01-08 | 16DR | chlor_a      |  7298 | 2 days    |
-| 2004-02-01 | 2024-01-08 | 32DR | chlor_a      |  7282 | 2 days    |
-| 2004-01-08 | 2024-01-08 | 8DR  | chlor_a      |  7306 | 2 days    |
-| 2004-01-01 | 2024-01-08 | DAY  | chlor_a      |  7313 | 2 days    |
-| 2002-07-01 | 2021-04-01 | MO   | chlor_a      |   226 | 1014 days |
-| 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 406 days  |
-| 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 406 days  |
-| 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 303 days  |
-| 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 303 days  |
-| 2004-01-08 | 2024-01-08 | 8DR  | par          |  7306 | 2 days    |
-| 2004-01-01 | 2024-01-08 | DAY  | par          |  7313 | 2 days    |
-| 2002-07-01 | 2021-04-01 | MO   | par          |   226 | 1014 days |
-| 2004-01-08 | 2024-01-08 | 8DR  | pic          |  7306 | 2 days    |
-| 2004-01-01 | 2024-01-08 | DAY  | pic          |  7313 | 2 days    |
-| 2002-07-01 | 2021-04-01 | MO   | pic          |   226 | 1014 days |
-| 2004-01-08 | 2024-01-08 | 8DR  | poc          |  7306 | 2 days    |
-| 2004-01-01 | 2024-01-08 | DAY  | poc          |  7313 | 2 days    |
-| 2002-07-01 | 2021-04-01 | MO   | poc          |   226 | 1014 days |
-| 2004-01-08 | 2024-01-08 | 8DR  | sst          |  7305 | 2 days    |
-| 2004-01-01 | 2024-01-08 | DAY  | sst          |  7312 | 2 days    |
-| 2002-07-01 | 2021-03-01 | MO   | sst          |   225 | 1045 days |
-| 2004-01-08 | 2024-01-08 | 8DR  | sst_slope    |  7305 | 2 days    |
+| firstdate  | lastdate   | per  | param        | count | age      |
+|:-----------|:-----------|:-----|:-------------|------:|:---------|
+| 2004-01-16 | 2024-01-08 | 16DR | chlor_a      |  7298 | 2 days   |
+| 2004-02-01 | 2024-01-08 | 32DR | chlor_a      |  7282 | 2 days   |
+| 2004-01-08 | 2024-01-08 | 8DR  | chlor_a      |  7306 | 2 days   |
+| 2004-01-01 | 2024-01-08 | DAY  | chlor_a      |  7313 | 2 days   |
+| 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   273 | 40 days  |
+| 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 406 days |
+| 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 406 days |
+| 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 303 days |
+| 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 303 days |
+| 2004-01-08 | 2024-01-08 | 8DR  | par          |  7306 | 2 days   |
+| 2004-01-01 | 2024-01-08 | DAY  | par          |  7313 | 2 days   |
+| 2002-07-01 | 2023-12-01 | MO   | par          |   273 | 40 days  |
+| 2004-01-08 | 2024-01-08 | 8DR  | pic          |  7306 | 2 days   |
+| 2004-01-01 | 2024-01-08 | DAY  | pic          |  7313 | 2 days   |
+| 2002-07-01 | 2023-12-01 | MO   | pic          |   273 | 40 days  |
+| 2004-01-08 | 2024-01-08 | 8DR  | poc          |  7306 | 2 days   |
+| 2004-01-01 | 2024-01-08 | DAY  | poc          |  7313 | 2 days   |
+| 2002-07-01 | 2023-12-01 | MO   | poc          |   273 | 40 days  |
+| 2004-01-08 | 2024-01-08 | 8DR  | sst          |  7305 | 2 days   |
+| 2004-01-01 | 2024-01-08 | DAY  | sst          |  7312 | 2 days   |
+| 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 70 days  |
+| 2004-01-08 | 2024-01-08 | 8DR  | sst_slope    |  7305 | 2 days   |
 
 ## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res, daily)
 
