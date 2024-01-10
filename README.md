@@ -131,7 +131,7 @@ Negative age means days ahead of the current date.
 
 We retain both the anomaly and the computed values.
 
-| firstdate  | lastdate   | anomaly | count | age      |
-|:-----------|:-----------|:--------|------:|:---------|
-| 1854-01-01 | 2023-09-01 | FALSE   |  2037 | 131 days |
-| 1854-01-01 | 2023-09-01 | TRUE    |  2037 | 131 days |
+| firstdate  | lastdate   | anomaly | count | age     |
+|:-----------|:-----------|:--------|------:|:--------|
+| 1854-01-01 | 2023-12-01 | FALSE   |  2040 | 40 days |
+| 1854-01-01 | 2023-12-01 | TRUE    |  2040 | 40 days |
