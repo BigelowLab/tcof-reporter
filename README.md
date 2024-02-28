@@ -63,36 +63,36 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 | firstdate  | lastdate   | per  | param        | count | age      |
 |:-----------|:-----------|:-----|:-------------|------:|:---------|
-| 2004-01-16 | 2024-01-31 | 16DR | chlor_a      |  7320 | 28 days  |
-| 2004-02-01 | 2024-01-31 | 32DR | chlor_a      |  7304 | 28 days  |
-| 2004-01-08 | 2024-01-31 | 8DR  | chlor_a      |  7328 | 28 days  |
-| 2004-01-01 | 2024-01-31 | DAY  | chlor_a      |  7335 | 28 days  |
+| 2004-01-16 | 2024-02-27 | 16DR | chlor_a      |  7348 | 1 days   |
+| 2004-02-01 | 2024-02-27 | 32DR | chlor_a      |  7332 | 1 days   |
+| 2004-01-08 | 2024-02-27 | 8DR  | chlor_a      |  7356 | 1 days   |
+| 2004-01-01 | 2024-02-27 | DAY  | chlor_a      |  7363 | 1 days   |
 | 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   258 | 89 days  |
 | 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 455 days |
 | 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 455 days |
 | 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 352 days |
 | 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 352 days |
-| 2004-01-08 | 2024-01-31 | 8DR  | par          |  7328 | 28 days  |
-| 2004-01-01 | 2024-01-31 | DAY  | par          |  7335 | 28 days  |
+| 2004-01-08 | 2024-02-27 | 8DR  | par          |  7356 | 1 days   |
+| 2004-01-01 | 2024-02-27 | DAY  | par          |  7363 | 1 days   |
 | 2002-07-01 | 2023-12-01 | MO   | par          |   258 | 89 days  |
-| 2004-01-08 | 2024-01-31 | 8DR  | pic          |  7328 | 28 days  |
-| 2004-01-01 | 2024-01-31 | DAY  | pic          |  7335 | 28 days  |
+| 2004-01-08 | 2024-02-27 | 8DR  | pic          |  7356 | 1 days   |
+| 2004-01-01 | 2024-02-27 | DAY  | pic          |  7363 | 1 days   |
 | 2002-07-01 | 2023-12-01 | MO   | pic          |   258 | 89 days  |
-| 2004-01-08 | 2024-01-31 | 8DR  | poc          |  7328 | 28 days  |
-| 2004-01-01 | 2024-01-31 | DAY  | poc          |  7335 | 28 days  |
+| 2004-01-08 | 2024-02-27 | 8DR  | poc          |  7356 | 1 days   |
+| 2004-01-01 | 2024-02-27 | DAY  | poc          |  7363 | 1 days   |
 | 2002-07-01 | 2023-12-01 | MO   | poc          |   258 | 89 days  |
-| 2004-01-08 | 2024-01-31 | 8DR  | sst          |  7327 | 28 days  |
-| 2004-01-01 | 2024-01-31 | DAY  | sst          |  7334 | 28 days  |
+| 2004-01-08 | 2024-02-27 | 8DR  | sst          |  7355 | 1 days   |
+| 2004-01-01 | 2024-02-27 | DAY  | sst          |  7362 | 1 days   |
 | 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 119 days |
-| 2004-01-08 | 2024-01-31 | 8DR  | sst_slope    |  7327 | 28 days  |
+| 2004-01-08 | 2024-02-27 | 8DR  | sst_slope    |  7355 | 1 days   |
 
 ## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res, daily)
 
 | firstdate  | lastdate   | per | param     | count | age     |
 |:-----------|:-----------|:----|:----------|------:|:--------|
-| 2004-01-01 | 2024-02-26 | DAY | sst       |  7362 | 2 days  |
+| 2004-01-01 | 2024-02-27 | DAY | sst       |  7363 | 1 days  |
 | 2004-01-01 | 2023-12-30 | DAY | sst_cum   |  7304 | 60 days |
-| 2004-01-01 | 2024-02-26 | DAY | sst_slope |  7362 | 2 days  |
+| 2004-01-01 | 2024-02-27 | DAY | sst_slope |  7363 | 1 days  |
 
 ## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res, daily)
 
@@ -133,5 +133,5 @@ We retain both the anomaly and the computed values.
 
 | firstdate  | lastdate   | anomaly | count | age     |
 |:-----------|:-----------|:--------|------:|:--------|
-| 1854-01-01 | 2023-12-01 | FALSE   |  2040 | 89 days |
-| 1854-01-01 | 2023-12-01 | TRUE    |  2040 | 89 days |
+| 1854-01-01 | 2024-01-01 | FALSE   |  2041 | 58 days |
+| 1854-01-01 | 2024-01-01 | TRUE    |  2041 | 58 days |
