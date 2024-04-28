@@ -11,88 +11,88 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 - `per` the period of time the variable represents
 - `param` short hand parameter name
 - `count` number of records available
-- `age` the time between the current report date, `2024-04-27`, and the
+- `age` the time between the current report date, `2024-04-28`, and the
   most recent record. Negative is a forecast date ahead of run date.
 
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
 | firstdate  | lastdate   | per  | param   | res | count | age      |
 |:-----------|:-----------|:-----|:--------|:----|------:|:---------|
-| 2002-07-04 | 2023-09-30 | CU   | chlor_a | 9km |    44 | 210 days |
-| 2003-06-01 | 2023-06-30 | MC   | chlor_a | 9km |    78 | 302 days |
-| 2024-02-01 | 2024-02-29 | MO   | chlor_a | 4km |   275 | 58 days  |
-| 2002-09-21 | 2022-12-20 | SCAU | chlor_a | 9km |     6 | 494 days |
-| 2003-03-21 | 2023-06-20 | SCSP | chlor_a | 9km |    10 | 312 days |
-| 2002-06-21 | 2023-09-20 | SCSU | chlor_a | 9km |     7 | 220 days |
-| 2002-12-21 | 2023-03-20 | SCWI | chlor_a | 9km |     6 | 404 days |
-| 2022-01-01 | 2022-12-31 | YR   | chlor_a | 9km |    40 | 483 days |
-| 2002-07-04 | 2023-09-30 | CU   | par     | 9km |    43 | 210 days |
-| 2003-06-01 | 2023-06-30 | MC   | par     | 9km |    32 | 302 days |
-| 2024-02-01 | 2024-02-29 | MO   | par     | 4km |   275 | 58 days  |
-| 2002-09-21 | 2022-12-20 | SCAU | par     | 9km |     6 | 494 days |
-| 2003-03-21 | 2023-06-20 | SCSP | par     | 9km |    10 | 312 days |
-| 2002-06-21 | 2023-09-20 | SCSU | par     | 9km |     7 | 220 days |
-| 2002-12-21 | 2023-03-20 | SCWI | par     | 9km |     6 | 404 days |
-| 2022-01-01 | 2022-12-31 | YR   | par     | 9km |    40 | 483 days |
-| 2002-07-04 | 2023-09-30 | CU   | pic     | 9km |    42 | 210 days |
-| 2003-06-01 | 2023-06-30 | MC   | pic     | 9km |    32 | 302 days |
-| 2024-02-01 | 2024-02-29 | MO   | pic     | 4km |   275 | 58 days  |
-| 2002-09-21 | 2022-12-20 | SCAU | pic     | 9km |     6 | 494 days |
-| 2003-03-21 | 2023-06-20 | SCSP | pic     | 9km |    10 | 312 days |
-| 2002-06-21 | 2023-09-20 | SCSU | pic     | 9km |     7 | 220 days |
-| 2002-12-21 | 2023-03-20 | SCWI | pic     | 9km |     6 | 404 days |
-| 2022-01-01 | 2022-12-31 | YR   | pic     | 9km |    40 | 483 days |
-| 2002-07-04 | 2023-09-30 | CU   | poc     | 9km |    42 | 210 days |
-| 2003-06-01 | 2023-06-30 | MC   | poc     | 9km |    32 | 302 days |
-| 2024-02-01 | 2024-02-29 | MO   | poc     | 4km |   275 | 58 days  |
-| 2002-09-21 | 2022-12-20 | SCAU | poc     | 9km |     6 | 494 days |
-| 2003-03-21 | 2023-06-20 | SCSP | poc     | 9km |    10 | 312 days |
-| 2002-06-21 | 2023-09-20 | SCSU | poc     | 9km |     7 | 220 days |
-| 2002-12-21 | 2023-03-20 | SCWI | poc     | 9km |     6 | 404 days |
-| 2022-01-01 | 2022-12-31 | YR   | poc     | 9km |    40 | 483 days |
-| 2002-07-04 | 2024-01-31 | CU   | sst     | 9km |    12 | 87 days  |
-| 2003-06-01 | 2023-06-30 | MC   | sst     | 9km |    38 | 302 days |
-| 2024-02-01 | 2024-02-29 | MO   | sst     | 4km |   260 | 58 days  |
-| 2002-09-21 | 2023-12-20 | SCAU | sst     | 9km |     6 | 129 days |
-| 2003-03-21 | 2023-06-20 | SCSP | sst     | 9km |     5 | 312 days |
-| 2002-06-21 | 2023-09-20 | SCSU | sst     | 9km |     5 | 220 days |
-| 2002-12-21 | 2023-03-20 | SCWI | sst     | 9km |     5 | 404 days |
-| 2023-01-01 | 2023-12-31 | YR   | sst     | 9km |    43 | 118 days |
+| 2002-07-04 | 2023-09-30 | CU   | chlor_a | 9km |    44 | 211 days |
+| 2003-06-01 | 2023-06-30 | MC   | chlor_a | 9km |    78 | 303 days |
+| 2024-03-01 | 2024-03-31 | MO   | chlor_a | 4km |   276 | 28 days  |
+| 2002-09-21 | 2022-12-20 | SCAU | chlor_a | 9km |     6 | 495 days |
+| 2003-03-21 | 2023-06-20 | SCSP | chlor_a | 9km |    10 | 313 days |
+| 2002-06-21 | 2023-09-20 | SCSU | chlor_a | 9km |     7 | 221 days |
+| 2002-12-21 | 2023-03-20 | SCWI | chlor_a | 9km |     6 | 405 days |
+| 2022-01-01 | 2022-12-31 | YR   | chlor_a | 9km |    40 | 484 days |
+| 2002-07-04 | 2023-09-30 | CU   | par     | 9km |    43 | 211 days |
+| 2003-06-01 | 2023-06-30 | MC   | par     | 9km |    32 | 303 days |
+| 2024-03-01 | 2024-03-31 | MO   | par     | 4km |   276 | 28 days  |
+| 2002-09-21 | 2022-12-20 | SCAU | par     | 9km |     6 | 495 days |
+| 2003-03-21 | 2023-06-20 | SCSP | par     | 9km |    10 | 313 days |
+| 2002-06-21 | 2023-09-20 | SCSU | par     | 9km |     7 | 221 days |
+| 2002-12-21 | 2023-03-20 | SCWI | par     | 9km |     6 | 405 days |
+| 2022-01-01 | 2022-12-31 | YR   | par     | 9km |    40 | 484 days |
+| 2002-07-04 | 2023-09-30 | CU   | pic     | 9km |    42 | 211 days |
+| 2003-06-01 | 2023-06-30 | MC   | pic     | 9km |    32 | 303 days |
+| 2024-03-01 | 2024-03-31 | MO   | pic     | 4km |   276 | 28 days  |
+| 2002-09-21 | 2022-12-20 | SCAU | pic     | 9km |     6 | 495 days |
+| 2003-03-21 | 2023-06-20 | SCSP | pic     | 9km |    10 | 313 days |
+| 2002-06-21 | 2023-09-20 | SCSU | pic     | 9km |     7 | 221 days |
+| 2002-12-21 | 2023-03-20 | SCWI | pic     | 9km |     6 | 405 days |
+| 2022-01-01 | 2022-12-31 | YR   | pic     | 9km |    40 | 484 days |
+| 2002-07-04 | 2023-09-30 | CU   | poc     | 9km |    42 | 211 days |
+| 2003-06-01 | 2023-06-30 | MC   | poc     | 9km |    32 | 303 days |
+| 2024-03-01 | 2024-03-31 | MO   | poc     | 4km |   276 | 28 days  |
+| 2002-09-21 | 2022-12-20 | SCAU | poc     | 9km |     6 | 495 days |
+| 2003-03-21 | 2023-06-20 | SCSP | poc     | 9km |    10 | 313 days |
+| 2002-06-21 | 2023-09-20 | SCSU | poc     | 9km |     7 | 221 days |
+| 2002-12-21 | 2023-03-20 | SCWI | poc     | 9km |     6 | 405 days |
+| 2022-01-01 | 2022-12-31 | YR   | poc     | 9km |    40 | 484 days |
+| 2002-07-04 | 2024-01-31 | CU   | sst     | 9km |    12 | 88 days  |
+| 2003-06-01 | 2023-06-30 | MC   | sst     | 9km |    38 | 303 days |
+| 2024-03-01 | 2024-03-31 | MO   | sst     | 4km |   261 | 28 days  |
+| 2002-09-21 | 2023-12-20 | SCAU | sst     | 9km |     6 | 130 days |
+| 2003-03-21 | 2023-06-20 | SCSP | sst     | 9km |     5 | 313 days |
+| 2002-06-21 | 2023-09-20 | SCSU | sst     | 9km |     5 | 221 days |
+| 2002-12-21 | 2023-03-20 | SCWI | sst     | 9km |     5 | 405 days |
+| 2023-01-01 | 2023-12-31 | YR   | sst     | 9km |    43 | 119 days |
 
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
 | firstdate  | lastdate   | per  | param        | count | age      |
 |:-----------|:-----------|:-----|:-------------|------:|:---------|
-| 2004-01-16 | 2024-04-24 | 16DR | chlor_a      |  7404 | 3 days   |
-| 2004-02-01 | 2024-04-24 | 32DR | chlor_a      |  7388 | 3 days   |
-| 2004-01-08 | 2024-04-24 | 8DR  | chlor_a      |  7412 | 3 days   |
-| 2004-01-01 | 2024-04-24 | DAY  | chlor_a      |  7419 | 3 days   |
-| 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   258 | 148 days |
-| 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 514 days |
-| 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 514 days |
-| 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 411 days |
-| 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 411 days |
-| 2004-01-08 | 2024-04-25 | 8DR  | par          |  7413 | 2 days   |
-| 2004-01-01 | 2024-04-25 | DAY  | par          |  7420 | 2 days   |
-| 2002-07-01 | 2023-12-01 | MO   | par          |   258 | 148 days |
-| 2004-01-08 | 2024-04-25 | 8DR  | pic          |  7413 | 2 days   |
-| 2004-01-01 | 2024-04-25 | DAY  | pic          |  7420 | 2 days   |
-| 2002-07-01 | 2023-12-01 | MO   | pic          |   258 | 148 days |
-| 2004-01-08 | 2024-04-25 | 8DR  | poc          |  7413 | 2 days   |
-| 2004-01-01 | 2024-04-25 | DAY  | poc          |  7420 | 2 days   |
-| 2002-07-01 | 2023-12-01 | MO   | poc          |   258 | 148 days |
-| 2004-01-08 | 2024-04-25 | 8DR  | sst          |  7412 | 2 days   |
-| 2004-01-01 | 2024-04-25 | DAY  | sst          |  7419 | 2 days   |
-| 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 178 days |
-| 2004-01-08 | 2024-04-25 | 8DR  | sst_slope    |  7412 | 2 days   |
+| 2004-01-16 | 2024-04-25 | 16DR | chlor_a      |  7405 | 3 days   |
+| 2004-02-01 | 2024-04-25 | 32DR | chlor_a      |  7389 | 3 days   |
+| 2004-01-08 | 2024-04-25 | 8DR  | chlor_a      |  7413 | 3 days   |
+| 2004-01-01 | 2024-04-25 | DAY  | chlor_a      |  7420 | 3 days   |
+| 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   258 | 149 days |
+| 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 515 days |
+| 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 515 days |
+| 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 412 days |
+| 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 412 days |
+| 2004-01-08 | 2024-04-25 | 8DR  | par          |  7413 | 3 days   |
+| 2004-01-01 | 2024-04-25 | DAY  | par          |  7420 | 3 days   |
+| 2002-07-01 | 2023-12-01 | MO   | par          |   258 | 149 days |
+| 2004-01-08 | 2024-04-25 | 8DR  | pic          |  7413 | 3 days   |
+| 2004-01-01 | 2024-04-25 | DAY  | pic          |  7420 | 3 days   |
+| 2002-07-01 | 2023-12-01 | MO   | pic          |   258 | 149 days |
+| 2004-01-08 | 2024-04-25 | 8DR  | poc          |  7413 | 3 days   |
+| 2004-01-01 | 2024-04-25 | DAY  | poc          |  7420 | 3 days   |
+| 2002-07-01 | 2023-12-01 | MO   | poc          |   258 | 149 days |
+| 2004-01-08 | 2024-04-25 | 8DR  | sst          |  7412 | 3 days   |
+| 2004-01-01 | 2024-04-25 | DAY  | sst          |  7419 | 3 days   |
+| 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 179 days |
+| 2004-01-08 | 2024-04-25 | 8DR  | sst_slope    |  7412 | 3 days   |
 
 ## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res, daily)
 
 | firstdate  | lastdate   | per | param     | count | age      |
 |:-----------|:-----------|:----|:----------|------:|:---------|
-| 2004-01-01 | 2024-04-25 | DAY | sst       |  7421 | 2 days   |
-| 2004-01-01 | 2023-12-30 | DAY | sst_cum   |  7304 | 119 days |
-| 2004-01-01 | 2024-04-25 | DAY | sst_slope |  7421 | 2 days   |
+| 2004-01-01 | 2024-04-26 | DAY | sst       |  7422 | 2 days   |
+| 2004-01-01 | 2023-12-30 | DAY | sst_cum   |  7304 | 120 days |
+| 2004-01-01 | 2024-04-26 | DAY | sst_slope |  7422 | 2 days   |
 
 ## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res, daily)
 
@@ -100,32 +100,32 @@ Negative age means days ahead of the current date.
 
 | firstdate  | lastdate   | param   | trt   | count | age     |
 |:-----------|:-----------|:--------|:------|------:|:--------|
-| 2022-09-30 | 2024-04-30 | airtemp | max   |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | airtemp | mean  |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | airtemp | min   |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | cloud   | mean  |  2537 | -3 days |
-| 2022-09-30 | 2024-04-30 | precip  | sum   |  7210 | -3 days |
-| 2022-09-30 | 2024-04-30 | relhum  | mean  |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | sncvr   | mean  |  7205 | -3 days |
-| 2022-09-30 | 2024-04-30 | sndep   | mean  |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | trnstr  | mean  |  7206 | -3 days |
-| 2022-09-30 | 2024-04-30 | uwind   | mean  |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | vegcvr  | mean  |  7206 | -3 days |
-| 2022-09-30 | 2024-04-30 | vegtyp  | first |  7206 | -3 days |
-| 2022-09-30 | 2024-04-30 | vis     | mean  |  4051 | -3 days |
-| 2022-09-30 | 2024-04-30 | vwind   | mean  |  7211 | -3 days |
-| 2022-09-30 | 2024-04-30 | wilt    | mean  |  7206 | -3 days |
+| 2022-09-30 | 2024-05-01 | airtemp | max   |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | airtemp | mean  |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | airtemp | min   |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | cloud   | mean  |  2538 | -3 days |
+| 2022-09-30 | 2024-05-01 | precip  | sum   |  7211 | -3 days |
+| 2022-09-30 | 2024-05-01 | relhum  | mean  |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | sncvr   | mean  |  7206 | -3 days |
+| 2022-09-30 | 2024-05-01 | sndep   | mean  |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | trnstr  | mean  |  7207 | -3 days |
+| 2022-09-30 | 2024-05-01 | uwind   | mean  |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | vegcvr  | mean  |  7207 | -3 days |
+| 2022-09-30 | 2024-05-01 | vegtyp  | first |  7207 | -3 days |
+| 2022-09-30 | 2024-05-01 | vis     | mean  |  4052 | -3 days |
+| 2022-09-30 | 2024-05-01 | vwind   | mean  |  7212 | -3 days |
+| 2022-09-30 | 2024-05-01 | wilt    | mean  |  7207 | -3 days |
 
 ## [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) for the world (0.25 degree res, daily and annual res)
 
 | firstdate  | lastdate   | per | trt   | count | age      |
 |:-----------|:-----------|:----|:------|------:|:---------|
-| 1982-01-01 | 2023-01-01 | ann | max   |    42 | 482 days |
-| 1982-01-01 | 2023-01-01 | ann | mean  |    42 | 482 days |
-| 1982-01-01 | 2023-01-01 | ann | min   |    42 | 482 days |
-| 1982-01-01 | 2023-01-01 | ann | range |    42 | 482 days |
-| 1982-01-01 | 2023-01-01 | ann | sum   |    42 | 482 days |
-| 1981-09-01 | 2024-04-25 | day | mean  | 15578 | 2 days   |
+| 1982-01-01 | 2023-01-01 | ann | max   |    42 | 483 days |
+| 1982-01-01 | 2023-01-01 | ann | mean  |    42 | 483 days |
+| 1982-01-01 | 2023-01-01 | ann | min   |    42 | 483 days |
+| 1982-01-01 | 2023-01-01 | ann | range |    42 | 483 days |
+| 1982-01-01 | 2023-01-01 | ann | sum   |    42 | 483 days |
+| 1981-09-01 | 2024-04-26 | day | mean  | 15579 | 2 days   |
 
 ## [ERSST](https://www.ncei.noaa.gov/products/extended-reconstructed-sst) for the world (2 degree res, monthly res)
 
@@ -133,5 +133,5 @@ We retain both the anomaly and the computed values.
 
 | firstdate  | lastdate   | anomaly | count | age     |
 |:-----------|:-----------|:--------|------:|:--------|
-| 1854-01-01 | 2024-02-01 | FALSE   |  2042 | 86 days |
-| 1854-01-01 | 2024-02-01 | TRUE    |  2042 | 86 days |
+| 1854-01-01 | 2024-03-01 | FALSE   |  2043 | 58 days |
+| 1854-01-01 | 2024-03-01 | TRUE    |  2043 | 58 days |
