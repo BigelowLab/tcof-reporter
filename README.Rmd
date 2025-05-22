@@ -13,7 +13,7 @@ suppressPackageStartupMessages({
   library(namforecast)
   library(oisster)
   library(ersst)
-  
+  library(andreas)
   library(knitr)
   library(dplyr)
 })
@@ -27,6 +27,100 @@ Tallies of various data products maintained at [Tandy Center got Ocean Forecasti
  + `count` number of records available
  + `age` the time between the current report date, ```r Sys.Date()```, and the most recent record.  Negative is a forecast date ahead of run date.
  
+ 
+
+ 
+## [Copernicus NWA Ocean Physics Reanalysis](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description) for Northwest Atlantic GLOBAL_MULTIYEAR_PHY_001_030
+
+```{r, echo = FALSE}
+path = copernicus::copernicus_path("nwa", "GLOBAL_MULTIYEAR_PHY_001_030")
+db = andreas::read_database(path) |>
+  select(date, period, variable) |>
+  group_by(variable, period) |> 
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      firstdate = min(tbl$date)
+      lastdate = max(tbl$date)
+      age = Sys.Date() - lastdate
+      dplyr::tibble(firstdate, lastdate, 
+                    per = tbl$period[1],
+                    param = tbl$variable[1],
+                    count = count,
+                    age = age)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+``` 
+
+## [Copernicus NWA Ocean Physics Analysis and Forecast](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description) for Northwest Atlantic GLOBAL_ANALYSISFORECAST_PHY_001_024
+
+```{r, echo = FALSE}
+path = copernicus::copernicus_path("nwa", "GLOBAL_ANALYSISFORECAST_PHY_001_024")
+db = andreas::read_database(path) |>
+  select(date, period, variable) |>
+  group_by(variable, period) |> 
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      firstdate = min(tbl$date)
+      lastdate = max(tbl$date)
+      age = Sys.Date() - lastdate
+      dplyr::tibble(firstdate, lastdate, 
+                    per = tbl$period[1],
+                    param = tbl$variable[1],
+                    count = count,
+                    age = age)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+``` 
+
+## [Global Ocean Biogeochemistry Hindcast](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_BGC_001_029/description) for World GLOBAL_MULTIYEAR_BGC_001_029
+
+```{r, echo = FALSE}
+path = copernicus::copernicus_path("world", "GLOBAL_MULTIYEAR_BGC_001_029")
+db = andreas::read_database(path) |>
+  select(date, period, variable) |>
+  group_by(variable, period) |> 
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      firstdate = min(tbl$date)
+      lastdate = max(tbl$date)
+      age = Sys.Date() - lastdate
+      dplyr::tibble(firstdate, lastdate, 
+                    per = tbl$period[1],
+                    param = tbl$variable[1],
+                    count = count,
+                    age = age)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+``` 
+
+## [Global Ocean Biogeochemistry Analysis and Forecast](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_BGC_001_028/description) for World GLOBAL_ANALYSISFORECAST_BGC_001_028
+
+`
+path = copernicus::copernicus_path("world", "GLOBAL_ANALYSISFORECAST_BGC_001_028")
+db = andreas::read_database(path) |>
+  select(date, period, variable) |>
+  group_by(variable, period) |> 
+  group_map(
+    function(tbl, key){
+      count = nrow(tbl)
+      firstdate = min(tbl$date)
+      lastdate = max(tbl$date)
+      age = Sys.Date() - lastdate
+      dplyr::tibble(firstdate, lastdate, 
+                    per = tbl$period[1],
+                    param = tbl$variable[1],
+                    count = count,
+                    age = age)
+    }, .keep = TRUE) |>
+  bind_rows()
+knitr::kable(db)
+`
  
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
