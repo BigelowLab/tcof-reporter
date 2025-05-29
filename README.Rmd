@@ -101,7 +101,7 @@ knitr::kable(db)
 
 ## [Global Ocean Biogeochemistry Analysis and Forecast](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_BGC_001_028/description) for World GLOBAL_ANALYSISFORECAST_BGC_001_028
 
-`
+```{r, echo = FALSE}
 path = copernicus::copernicus_path("world", "GLOBAL_ANALYSISFORECAST_BGC_001_028")
 db = andreas::read_database(path) |>
   select(date, period, variable) |>
@@ -120,7 +120,7 @@ db = andreas::read_database(path) |>
     }, .keep = TRUE) |>
   bind_rows()
 knitr::kable(db)
-`
+```
  
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
