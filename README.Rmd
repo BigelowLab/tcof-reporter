@@ -33,7 +33,7 @@ Tallies of various data products maintained at [Tandy Center got Ocean Forecasti
 ## [Copernicus NWA Ocean Physics Reanalysis](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_PHY_001_030/description) for Northwest Atlantic GLOBAL_MULTIYEAR_PHY_001_030
 
 ```{r, echo = FALSE}
-path = copernicus::copernicus_path("nwa", "GLOBAL_MULTIYEAR_PHY_001_030")
+path = copernicus::copernicus_path("chfc", "GLOBAL_MULTIYEAR_PHY_001_030")
 db = andreas::read_database(path) |>
   select(date, period, variable) |>
   group_by(variable, period) |> 
