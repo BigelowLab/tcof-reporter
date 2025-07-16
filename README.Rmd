@@ -56,7 +56,7 @@ knitr::kable(db)
 ## [Copernicus NWA Ocean Physics Analysis and Forecast](https://data.marine.copernicus.eu/product/GLOBAL_ANALYSISFORECAST_PHY_001_024/description) for Northwest Atlantic GLOBAL_ANALYSISFORECAST_PHY_001_024
 
 ```{r, echo = FALSE}
-path = copernicus::copernicus_path("nwa", "GLOBAL_ANALYSISFORECAST_PHY_001_024")
+path = copernicus::copernicus_path("chfc", "GLOBAL_ANALYSISFORECAST_PHY_001_024")
 db = andreas::read_database(path) |>
   select(date, period, variable) |>
   group_by(variable, period) |> 

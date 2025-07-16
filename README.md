@@ -30,16 +30,16 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 | firstdate  | lastdate   | per | param  | count | age     |
 |:-----------|:-----------|:----|:-------|------:|:--------|
-| 2022-06-01 | 2025-05-20 | day | mlotst |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | pbo    |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | so     |  1063 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | sob    |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | thetao |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | tob    |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | uo     |  1063 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | vo     |  1063 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | wo     |  1062 | 57 days |
-| 2022-06-01 | 2025-05-20 | day | zos    |  1062 | 57 days |
+| 2022-06-01 | 2025-07-24 | day | mlotst |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | pbo    |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | so     |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | sob    |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | thetao |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | tob    |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | uo     |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | vo     |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | wo     |  1150 | -8 days |
+| 2022-06-01 | 2025-07-24 | day | zos    |  1150 | -8 days |
 
 ## [Global Ocean Biogeochemistry Hindcast](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_BGC_001_029/description) for World GLOBAL_MULTIYEAR_BGC_001_029
 
