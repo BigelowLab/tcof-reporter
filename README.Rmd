@@ -125,8 +125,8 @@ knitr::kable(db)
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for world (mixed resolutions, AQUA MODIS)
 
 ```{r, echo = FALSE}
-path = obpg2tools::obpg_path("world", "AQUA_MODIS", "L3m")
-db = obpg2tools::read_database(path) |>
+path = obtools::obpg_path("world", "AQUA_MODIS", "L3m")
+db = obpg::read_database(path) |>
   obpg2tools::database_to_climatology(filter = TRUE) |>
   select(date, end_date, per, param, res) |>
   group_by(param, per, res) |> 
@@ -149,8 +149,8 @@ knitr::kable(db)
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
 ```{r, echo = FALSE}
-path = obpg2tools::obpg_path("nwa", "AQUA_MODIS", "L3m")
-db = obpg2tools::read_database(path) |>
+path = obtools::obpg_path("nwa", "AQUA_MODIS", "L3m")
+db = obpg::read_database(path) |>
   select(date, per, param) |>
   group_by(param, per) |> 
   group_map(

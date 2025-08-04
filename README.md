@@ -30,16 +30,16 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 | firstdate  | lastdate   | per | param  | count | age     |
 |:-----------|:-----------|:----|:-------|------:|:--------|
-| 2022-06-01 | 2025-08-11 | day | mlotst |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | pbo    |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | so     |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | sob    |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | thetao |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | tob    |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | uo     |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | vo     |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | wo     |  1168 | -7 days |
-| 2022-06-01 | 2025-08-11 | day | zos    |  1168 | -7 days |
+| 2022-06-01 | 2025-08-12 | day | mlotst |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | pbo    |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | so     |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | sob    |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | thetao |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | tob    |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | uo     |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | vo     |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | wo     |  1169 | -8 days |
+| 2022-06-01 | 2025-08-12 | day | zos    |  1169 | -8 days |
 
 ## [Global Ocean Biogeochemistry Hindcast](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_BGC_001_029/description) for World GLOBAL_MULTIYEAR_BGC_001_029
 
@@ -114,23 +114,23 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 | 2004-01-16 | 2025-02-06 | 16DR | chlor_a      |  7693 | 179 days |
 | 2004-02-01 | 2025-02-06 | 32DR | chlor_a      |  7677 | 179 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | chlor_a      |  7701 | 179 days |
-| 2004-01-01 | 2025-02-06 | DAY  | chlor_a      |  7708 | 179 days |
+| 2002-07-03 | 2025-08-02 | DAY  | chlor_a      |  8425 | 2 days   |
 | 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   258 | 612 days |
 | 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 978 days |
 | 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 978 days |
 | 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 875 days |
 | 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 875 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | par          |  7701 | 179 days |
-| 2004-01-01 | 2025-02-06 | DAY  | par          |  7708 | 179 days |
+| 2002-07-04 | 2025-08-02 | DAY  | par          |  8424 | 2 days   |
 | 2002-07-01 | 2023-12-01 | MO   | par          |   258 | 612 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | pic          |  7701 | 179 days |
-| 2004-01-01 | 2025-02-06 | DAY  | pic          |  7708 | 179 days |
+| 2002-07-04 | 2025-08-02 | DAY  | pic          |  8424 | 2 days   |
 | 2002-07-01 | 2023-12-01 | MO   | pic          |   258 | 612 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | poc          |  7701 | 179 days |
-| 2004-01-01 | 2025-02-06 | DAY  | poc          |  7708 | 179 days |
+| 2002-07-04 | 2025-08-02 | DAY  | poc          |  8424 | 2 days   |
 | 2002-07-01 | 2023-12-01 | MO   | poc          |   258 | 612 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | sst          |  7700 | 179 days |
-| 2004-01-01 | 2025-02-06 | DAY  | sst          |  7707 | 179 days |
+| 2002-07-03 | 2025-08-02 | DAY  | sst          |  8424 | 2 days   |
 | 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 642 days |
 | 2004-01-08 | 2025-02-06 | 8DR  | sst_slope    |  7700 | 179 days |
 
