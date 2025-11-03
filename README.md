@@ -30,16 +30,16 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 | firstdate  | lastdate   | per | param  | count | age     |
 |:-----------|:-----------|:----|:-------|------:|:--------|
-| 2022-06-01 | 2025-11-10 | day | mlotst |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | pbo    |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | so     |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | sob    |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | thetao |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | tob    |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | uo     |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | vo     |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | wo     |  1259 | -7 days |
-| 2022-06-01 | 2025-11-10 | day | zos    |  1259 | -7 days |
+| 2022-06-01 | 2025-11-11 | day | mlotst |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | pbo    |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | so     |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | sob    |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | thetao |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | tob    |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | uo     |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | vo     |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | wo     |  1260 | -8 days |
+| 2022-06-01 | 2025-11-11 | day | zos    |  1260 | -8 days |
 
 ## [Global Ocean Biogeochemistry Hindcast](https://data.marine.copernicus.eu/product/GLOBAL_MULTIYEAR_BGC_001_029/description) for World GLOBAL_MULTIYEAR_BGC_001_029
 
@@ -112,43 +112,47 @@ Lab](https://www.bigelow.org/science/lab/computational-oceanography/)
 
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
+Runs daily at 1100.
+
 | firstdate  | lastdate   | per  | param        | count | age       |
 |:-----------|:-----------|:-----|:-------------|------:|:----------|
 | 2004-01-16 | 2025-02-06 | 16DR | chlor_a      |  7693 | 270 days  |
 | 2004-02-01 | 2025-02-06 | 32DR | chlor_a      |  7677 | 270 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | chlor_a      |  7701 | 270 days  |
-| 2002-07-03 | 2025-11-01 | DAY  | chlor_a      |  8516 | 2 days    |
+| 2002-07-03 | 2025-11-02 | DAY  | chlor_a      |  8517 | 1 days    |
 | 2002-07-01 | 2023-12-01 | MO   | chlor_a      |   258 | 703 days  |
 | 2004-02-08 | 2022-11-30 | 8DR  | chlor_a_cum  |  6871 | 1069 days |
 | 2004-02-01 | 2022-11-30 | DAY  | chlor_a_cum  |  6878 | 1069 days |
 | 2004-02-08 | 2023-03-13 | 8DR  | chlor_a_fill |  6974 | 966 days  |
 | 2004-02-01 | 2023-03-13 | DAY  | chlor_a_fill |  6981 | 966 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | par          |  7701 | 270 days  |
-| 2002-07-04 | 2025-11-01 | DAY  | par          |  8515 | 2 days    |
+| 2002-07-04 | 2025-11-02 | DAY  | par          |  8516 | 1 days    |
 | 2002-07-01 | 2023-12-01 | MO   | par          |   258 | 703 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | pic          |  7701 | 270 days  |
-| 2002-07-04 | 2025-11-01 | DAY  | pic          |  8515 | 2 days    |
+| 2002-07-04 | 2025-11-02 | DAY  | pic          |  8516 | 1 days    |
 | 2002-07-01 | 2023-12-01 | MO   | pic          |   258 | 703 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | poc          |  7701 | 270 days  |
-| 2002-07-04 | 2025-11-01 | DAY  | poc          |  8515 | 2 days    |
+| 2002-07-04 | 2025-11-02 | DAY  | poc          |  8516 | 1 days    |
 | 2002-07-01 | 2023-12-01 | MO   | poc          |   258 | 703 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | sst          |  7700 | 270 days  |
-| 2002-07-03 | 2025-11-01 | DAY  | sst          |  8515 | 2 days    |
+| 2002-07-03 | 2025-11-02 | DAY  | sst          |  8516 | 1 days    |
 | 2002-07-01 | 2023-11-01 | MO   | sst          |   256 | 733 days  |
 | 2004-01-08 | 2025-02-06 | 8DR  | sst_slope    |  7700 | 270 days  |
 
 ## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res, daily)
 
+Runs daily at 1150.
+
 | firstdate  | lastdate   | per | param     | count | age      |
 |:-----------|:-----------|:----|:----------|------:|:---------|
-| 2004-01-01 | 2025-11-01 | DAY | sst       |  7976 | 2 days   |
+| 2004-01-01 | 2025-11-02 | DAY | sst       |  7977 | 1 days   |
 | 2004-01-01 | 2024-05-01 | MON | sst       |   245 | 551 days |
 | 2004-01-01 | 2023-12-30 | DAY | sst_cum   |  7304 | 674 days |
-| 2004-01-01 | 2025-11-01 | DAY | sst_slope |  7976 | 2 days   |
+| 2004-01-01 | 2025-11-02 | DAY | sst_slope |  7977 | 1 days   |
 
 ## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res, daily)
 
-Negative age means days ahead of the current date.
+Negative age means days ahead of the current date. Runs daily at 4am.
 
 | firstdate  | lastdate   | param   | trt   | count | age     |
 |:-----------|:-----------|:--------|:------|------:|:--------|
@@ -170,6 +174,8 @@ Negative age means days ahead of the current date.
 
 ## [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) for the world (0.25 degree res, daily and annual res)
 
+Daily download with annual summary run.
+
 | firstdate  | lastdate   | per | trt   | ltm | count | age      |
 |:-----------|:-----------|:----|:------|:----|------:|:---------|
 | 1982-01-01 | 2024-01-01 | ann | max   | NA  |    43 | 672 days |
@@ -181,7 +187,8 @@ Negative age means days ahead of the current date.
 
 ## [ERSST](https://www.ncei.noaa.gov/products/extended-reconstructed-sst) for the world (2 degree res, monthly res)
 
-We retain both the anomaly and the computed values.
+We retain both the anomaly and the computed values. Runs once per month
+on the 28th; may lag by multiple months depending upon upstream source.
 
 | firstdate  | lastdate   | anomaly | count | age     |
 |:-----------|:-----------|:--------|------:|:--------|

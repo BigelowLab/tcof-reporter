@@ -148,6 +148,8 @@ knitr::kable(db)
  
 ## [OBPG](https://oceancolor.gsfc.nasa.gov/) for Northwest Atlantic (all 4km res, AQUA and TERRA MODIS)
 
+Runs daily at 1100.
+
 ```{r, echo = FALSE}
 path = obtools::obpg_path("nwa", "AQUA_MODIS", "L3m")
 db = obpg::read_database(path) |>
@@ -170,6 +172,8 @@ knitr::kable(db)
 
 ## [MUR](https://podaac.jpl.nasa.gov/MEaSUREs-MUR) for Northwest Atlantic (all 0.01 degree res, daily)
 
+Runs daily at 1150.
+
 ```{r, echo = FALSE}
 path = murtools::mur_path("nwa")
 db = murtools::read_database(path) |>
@@ -191,7 +195,7 @@ knitr::kable(db)
 
 ## [NAM](https://www.ncei.noaa.gov/products/weather-climate-models/north-american-mesoscale) for Northeast US and Eastern Canada (all 12km res, daily)
 
-Negative age means days ahead of the current date.
+Negative age means days ahead of the current date. Runs daily at 4am.
 
 ```{r, echo = FALSE}
 path = namforecast::nam_path("nwa", "forecast")
@@ -214,6 +218,8 @@ knitr::kable(db)
 
 ## [OISST](https://www.ncei.noaa.gov/products/optimum-interpolation-sst) for the world (0.25 degree res, daily and annual res)
 
+Daily download with annual summary run.
+
 ```{r, echo = FALSE}
 path = oisster::oisst_path("world")
 db = oisster::read_database(path) |> 
@@ -235,7 +241,7 @@ knitr::kable(db)
 
 ## [ERSST](https://www.ncei.noaa.gov/products/extended-reconstructed-sst) for the world (2 degree res, monthly res)
 
-We retain both the anomaly and the computed values.
+We retain both the anomaly and the computed values. Runs once per month on the 28th; may lag by multiple months depending upon upstream source.
 
 ```{r, echo = FALSE}
 path = ersst::ersst_path("v5")
